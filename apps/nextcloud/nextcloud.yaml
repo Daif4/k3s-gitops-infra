@@ -109,7 +109,7 @@ spec:
     spec:
       containers:
       - name: nextcloud
-        image: dh-mirror.gitverse.ru/library/nextcloud:stable-alpine
+        image: nextcloud:stable-alpine
         env:
         # Настройки подключения к Postgres
         - name: POSTGRES_HOST
