@@ -109,7 +109,7 @@ spec:
     spec:
       containers:
       - name: nextcloud
-        image: nextcloud:stable-alpine
+        image: nextcloud:stable
         env:
         # Настройки подключения к Postgres
         - name: POSTGRES_HOST
