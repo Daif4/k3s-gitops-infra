@@ -129,6 +129,10 @@ spec:
         # ==========================================
         - name: NEXTCLOUD_TRUSTED_DOMAINS
           value: "192.168.189.154 192.168.189.150 192.168.189.151"
+        # ИСПРАВЛЕНИЕ ОШИБКИ ПРАВ ПОСТГРЕСА:
+        # ==========================================
+        - name: NC_setup_create_db_user
+          value: "false"
         ports:
         - containerPort: 80
           name: http
