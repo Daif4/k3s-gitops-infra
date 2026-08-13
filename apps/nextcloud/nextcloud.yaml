@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: redis
-        image: image: dh-mirror.gitverse.ru/library/redis:7-alpine
+        image: dh-mirror.gitverse.ru/library/redis:7-alpine
         command: ["redis-server", "--requirepass", "supersecretredis"]
         ports:
         - containerPort: 6379
@@ -62,7 +62,7 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: image: dh-mirror.gitverse.ru/library/postgres:15-alpine
+        image: dh-mirror.gitverse.ru/library/postgres:15-alpine
         env:
         - name: POSTGRES_DB
           value: nextcloud_db
