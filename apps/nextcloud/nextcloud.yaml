@@ -125,6 +125,10 @@ spec:
           value: nextcloud-redis-svc
         - name: REDIS_HOST_PASSWORD
           value: supersecretredis
+        # ДОБАВЛЯЕМ ДОВЕРЕННЫЕ ДОМЕНЫ ТУТ:
+        # ==========================================
+        - name: NEXTCLOUD_TRUSTED_DOMAINS
+          value: "192.168.189.154 192.168.189.150 192.168.189.151"
         ports:
         - containerPort: 80
           name: http
